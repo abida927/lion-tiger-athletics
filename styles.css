@@ -248,4 +248,55 @@ h1{
   font-weight: 800;
   color: var(--text);
 }
+/* ===== Home inspiration + mission fashion ===== */
+.quote{
+  margin: 8px 0 10px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  font-size: 15px;
+}
+.blue-quote{
+  color: var(--navy);
+  background: linear-gradient(90deg, rgba(26,115,255,.18), transparent);
+  padding: 8px 10px;
+  border-radius: 12px;
+  display: inline-block;
+}
+.pink-quote{
+  color: var(--navy);
+  background: linear-gradient(90deg, rgba(255,179,214,.28), transparent);
+  padding: 8px 10px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.mission-card{
+  border-radius: 26px;
+}
+.mission-kicker{
+  display:inline-block;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(26,115,255,.14), rgba(255,179,214,.18));
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+}
+.mission-title{
+  margin: 0 0 10px;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+}
+.mission-text{
+  color: var(--muted);
+  font-size: 16.5px;
+  line-height: 1.75;
+  letter-spacing: 0.1px;
+}
+.mission-text::first-line{
+  font-weight: 800;
+  color: var(--text);
+}
+
 
