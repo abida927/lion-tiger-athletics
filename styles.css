@@ -79,7 +79,7 @@ a:hover{text-decoration:underline}
   position:absolute;
   inset:0;
   z-index: 0; /* base layer */
-  background-image: url("/assets/hero-golf.jpg"); /* NOTE the leading / */
+  background-image: url("/assets/hero-golf-v3.jpg");
   background-size: cover;
   background-position: center;
   opacity: 1;
