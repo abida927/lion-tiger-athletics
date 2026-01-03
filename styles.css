@@ -204,3 +204,48 @@ h1{
 .footer-inner{display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap;align-items:center}
 .small{font-size:12.5px}
 .note{font-style: italic; color: var(--muted)}
+/* ===== Home inspiration + mission fashion ===== */
+.quote{
+  margin: 0 0 10px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  font-size: 15px;
+}
+.blue-quote{
+  color: var(--navy);
+  background: linear-gradient(90deg, rgba(26,115,255,.18), transparent);
+  padding: 8px 10px;
+  border-radius: 12px;
+  display: inline-block;
+}
+.pink-quote{
+  color: var(--navy);
+  background: linear-gradient(90deg, rgba(255,179,214,.28), transparent);
+  padding: 8px 10px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.mission-card{
+  border-radius: 26px;
+}
+
+.mission-title{
+  margin: 0 0 10px;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+}
+
+.mission-text{
+  color: var(--muted);
+  font-size: 16.5px;
+  line-height: 1.75;
+  letter-spacing: 0.1px;
+}
+
+/* subtle “fashion” emphasis: first line feels editorial */
+.mission-text::first-line{
+  font-weight: 800;
+  color: var(--text);
+}
+
