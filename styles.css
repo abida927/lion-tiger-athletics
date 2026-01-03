@@ -1,17 +1,35 @@
 
-/* Lion & Tiger Athletics - minimal, safety-first */
 :root {
-  --primary: #0B1F3B;
-  --blue: #1E63FF;
-  --pink: #F2A7C6;
-  --text: #111827;
-  --muted: #6B7280;
+  --primary: #071A3A;          /* deeper navy for premium */
+  --blue: #1A73FF;             /* bright blue */
+  --pink: #FFB3D6;             /* light pink */
+  --text: #0B1220;
+  --muted: #4B5563;
   --bg: #FFFFFF;
-  --card: #F8FAFC;
-  --border: #E5E7EB;
+  --card: #FFFFFF;
+  --border: rgba(15, 23, 42, 0.10);
+
+  /* new: soft premium glow backgrounds */
+  --soft-blue: rgba(26, 115, 255, 0.10);
+  --soft-pink: rgba(255, 179, 214, 0.16);
 }
+
 * { box-sizing: border-box; }
 html, body { margin:0; padding:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; color: var(--text); background: var(--bg); }
+.page-glow {
+  position: relative;
+  isolation: isolate;
+}
+.page-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(900px 520px at 15% 8%, var(--soft-blue), transparent 60%),
+    radial-gradient(900px 520px at 92% 18%, var(--soft-pink), transparent 60%);
+}
+
 a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: underline; }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
@@ -65,10 +83,13 @@ h1 { margin: 14px 0 12px; font-size: clamp(28px, 4vw, 44px); line-height: 1.08; 
 .card {
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 18px;
-  box-shadow: 0 1px 0 rgba(17,24,39,.02);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow:
+    0 10px 30px rgba(2, 6, 23, 0.06),
+    0 1px 0 rgba(2, 6, 23, 0.03);
 }
+
 .card h3 { margin: 0 0 8px; font-size: 18px; }
 .pill-row { display:flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
 .pill { font-size: 12px; font-weight: 700; padding: 6px 10px; border-radius: 999px; border:1px solid var(--border); background: #fff; }
