@@ -1,18 +1,17 @@
-
 :root {
-  --primary: #071A3A;          /* deeper navy for premium */
-  --blue: #1A73FF;             /* bright blue */
-  --pink: #FFB3D6;             /* light pink */
+  --primary: #071A3A;
+  --blue: #1A73FF;
+  --pink: #FFB3D6;
   --text: #0B1220;
   --muted: #4B5563;
   --bg: #FFFFFF;
   --card: #FFFFFF;
   --border: rgba(15, 23, 42, 0.10);
 
-  /* new: soft premium glow backgrounds */
-  --soft-blue: rgba(26, 115, 255, 0.10);
-  --soft-pink: rgba(255, 179, 214, 0.16);
+  --soft-blue: rgba(26, 115, 255, 0.14);
+  --soft-pink: rgba(255, 179, 214, 0.20);
 }
+
 
 * { box-sizing: border-box; }
 html, body { margin:0; padding:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; color: var(--text); background: var(--bg); }
