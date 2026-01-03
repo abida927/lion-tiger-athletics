@@ -76,7 +76,7 @@ a:hover { text-decoration: underline; }
 }
 .hero-overlay {
   position:absolute; inset:0;
-  background-image: url('assets/hero-placeholder.svg');
+ background-image: url('assets/hero-golf.jpg');
   background-size: cover;
   background-position: center;
   filter: saturate(.9) contrast(1.05);
