@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1E63FF" stop-opacity=".35"/>
+    <stop offset="1" stop-color="#F2A7C6" stop-opacity=".35"/>
+  </linearGradient>
+</defs>
+<rect width="1600" height="900" fill="#0B1F3B"/>
+<rect width="1600" height="900" fill="url(#g)"/>
+<g opacity=".45" fill="#ffffff">
+  <circle cx="280" cy="520" r="6"/><circle cx="305" cy="545" r="5"/><circle cx="330" cy="570" r="4"/>
+</g>
+<g opacity=".55" stroke="#ffffff" stroke-width="8" stroke-linecap="round">
+  <path d="M980 600c120-120 210-180 340-220" opacity=".4"/>
+  <path d="M900 640c180-200 360-250 520-300" opacity=".25"/>
+</g>
+<text x="80" y="820" font-family="system-ui, -apple-system, Segoe UI, Roboto" font-size="40" fill="#ffffff" opacity=".55">
+Golf swing close-up (replace this image with your photo later)
+</text>
+</svg>
