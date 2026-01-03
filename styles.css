@@ -71,21 +71,40 @@ a:hover{text-decoration:underline}
   overflow:hidden;
   display:flex;
   align-items:flex-end;
+  background: #071A3A; /* fallback */
 }
+
+/* Force hero image to be visible */
 .hero-bg{
-  position:absolute;inset:0;
-  background-image: url("assets/hero-golf.jpg"); /* <- upload this file */
+  position:absolute;
+  inset:0;
+  z-index: 0; /* base layer */
+  background-image: url("/assets/hero-golf.jpg"); /* NOTE the leading / */
   background-size: cover;
   background-position: center;
-  filter: saturate(1.05) contrast(1.05);
+  opacity: 1;
+  filter: none;
 }
+
+/* Make overlay lighter so image shows clearly */
 .hero-overlay{
-  position:absolute;inset:0;
+  position:absolute;
+  inset:0;
+  z-index: 1; /* above image */
   background:
-    radial-gradient(1200px 600px at 18% 10%, rgba(26,115,255,.45), transparent 58%),
-    radial-gradient(900px 500px at 86% 30%, rgba(255,179,214,.35), transparent 58%),
-    linear-gradient(180deg, rgba(7,26,58,.88), rgba(7,26,58,.76));
+    radial-gradient(1200px 600px at 18% 10%, rgba(26,115,255,.28), transparent 58%),
+    radial-gradient(900px 500px at 86% 30%, rgba(255,179,214,.22), transparent 58%),
+    linear-gradient(180deg, rgba(7,26,58,.55), rgba(7,26,58,.45));
 }
+
+/* Keep text on top */
+.hero-content{
+  position:relative;
+  z-index: 2;
+  padding: 56px 0 44px 0;
+  color:#fff;
+}
+
 .hero-content{
   position:relative;
   padding: 56px 0 44px 0;
